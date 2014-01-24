@@ -13,4 +13,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
 #endif
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height//获取屏幕高度
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width//获取屏幕宽度
+#define IS_IOS_7 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=7.0)?YES:NO

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VoiceInputView.h"
+@interface VoiceFinanceFirstViewController : UIViewController<VoiceInputDelegate>{
+    
+}
+@property (weak, nonatomic) IBOutlet UITextField *descriptionText;
 
-@interface VoiceFinanceFirstViewController : UIViewController
-
+- (IBAction)voiceBtn:(id)sender;
 @end
